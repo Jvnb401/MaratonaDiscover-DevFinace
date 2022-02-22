@@ -9,6 +9,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+  margin: 3.2rem 0 .8rem;
+  color: #363f5f;
+
+  font-weight: normal;
+}
+
 
 header {
   background-color: #2d4a22;
@@ -19,4 +26,19 @@ header {
 #logo {
   color: #eee;
   font-weight: 100;
+}
+
+
+main {
+  width: min(80vw, 800px);
+  margin: 0 auto;
+}
+
+#balance {
+  margin-top: -8rem;
+}
+
+#balance h2 {
+  margin-top: 0;
+  color: #fff;
 }
