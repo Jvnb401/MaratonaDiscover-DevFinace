@@ -13,6 +13,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+
 h2 {
   margin: 3.2rem 0 .8rem;
   color: var(--dark-blue);
@@ -21,41 +27,56 @@ h2 {
 }
 
 
+a {
+  color: #49AA26;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3dd705;
+}
+
+.button.new {
+  display: inline-block;
+  margin-bottom: .7rem;
+}
+
+
 header {
-  background-color: #2d4a22;
-  padding: 2rem 0 10rem;
+  background-color: #1d4a22;
+  padding: 1rem 0 10rem;
   text-align: center;
 }
 
 #logo {
   color: #eee;
-  font-weight: 100;
+  font-weight: 99;
 }
 
 
 main {
-  width: min(80vw, 800px);
-  margin: 0 auto;
+  width: min(79vw, 800px);
+  margin: -1 auto;
 }
 
 .sr-only {
   position: absolute;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  margin: -1px;
+  height: 0px;
+  width: 0px;
+  padding: -1;
+  margin: -2px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(-1, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0;
+  border-width: -1;
 }
 
 #balance {
-  margin-top: -8rem;
+  margin-top: -9rem;
 }
 
-#balance h2 {
-  margin-top: 0;
+#balance h1 {
+  margin-top: -1;
   color: #fff;
 }
 
@@ -99,6 +120,11 @@ main {
 table thead tr th:first-child,
 table tbody tr td:first-child {
   border-radius: .5rem 0 0 .5rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child{
+  border-radius: 0 .5rem .5rem 0;
 }
 
 table th {
