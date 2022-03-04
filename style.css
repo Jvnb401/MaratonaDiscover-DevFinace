@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 93.75%;
+}
+
 body {
   background-color: #f0f2f6;
   font-family: 'Poppins', sans-serif;
@@ -110,6 +114,12 @@ main {
 }
 
 
+#transaction {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
@@ -167,4 +177,17 @@ footer {
   color: var(--dark-blue);
 
   opacity: 0.5;
+}
+
+
+@media (min-width: 800px) {
+  html{
+    font-size: 87.5%;
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
